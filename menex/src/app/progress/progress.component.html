@@ -1,0 +1,69 @@
+
+<!-- <mat-card>
+   <mat-card-title>Basic progress-spinner</mat-card-title>
+   <mat-spinner></mat-spinner>
+
+   <mat-card-title>Progress bar</mat-card-title>
+   <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+   <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+   <mat-progress-bar mode="buffer"></mat-progress-bar>
+   <mat-progress-bar mode="query"></mat-progress-bar>
+</mat-card>
+ -->
+
+
+<mat-card>
+  <mat-card-content>
+
+    <section>
+      <h2>Survey progress (Determinate progress bar)</h2>
+      <mat-progress-bar mode="determinate" [value]="surveyProgress" color="primary"
+                        aria-label="Survey progress">
+      </mat-progress-bar>
+    </section>
+
+    <section>
+      <h2>Video progress (Progress bar with buffer) </h2>
+      <mat-progress-bar [value]="videoPlayValue" [bufferValue]="videoBufferValue" mode="buffer"
+                        color="primary" aria-label="Video progress">
+      </mat-progress-bar>
+    </section>
+
+    <section>
+      <h2>Loading content progress (Indeterminate progress bar)</h2>
+      <mat-progress-bar mode="indeterminate" color="warn" aria-label="Loading content">
+      </mat-progress-bar>
+    </section>
+
+    <section>
+      <h2>Search progress (Query progress bar)</h2>
+      <mat-progress-bar mode="query" color="accent" aria-label="Searching"></mat-progress-bar>
+    </section>
+
+  </mat-card-content>
+</mat-card>
+
+
+
+<mat-card>
+  <mat-card-content>
+
+    <section>
+      <h2>Loading indicator (Indeterminate progress spinner)</h2>
+      <mat-spinner color="indeterminate" [strokeWidth]="1" aria-label="Loading"></mat-spinner>
+      <mat-spinner color="accent" aria-label="Loading"></mat-spinner>
+    </section>
+
+    <section>
+      <h2>Portion of pizza eaten (Determinate progress spinner) </h2>
+      <mat-progress-spinner [strokeWidth]="1" color="primary"
+                            [value]="portionValue" aria-label="Portion of pizza eaten">
+      </mat-progress-spinner>
+      <mat-progress-spinner color="warn" [value]="portionValue"
+                            aria-label="Portion of pizza eaten">
+      </mat-progress-spinner>
+
+    </section>
+
+  </mat-card-content>
+</mat-card>

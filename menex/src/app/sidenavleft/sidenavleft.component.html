@@ -1,0 +1,100 @@
+<mat-toolbar></mat-toolbar>
+<section class="demo-expansion">
+  <mat-expansion-panel #myPanel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>Form Control</mat-panel-title>
+    </mat-expansion-panel-header>
+    <a href="" routerLink="/Input">Input</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Autocomplete">Autocomplete</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Checkbox">Checkbox</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Datepicker">Datepicker</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Radio">Radio</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Select">Select</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/Slider">Slider</a>
+    <mat-divider></mat-divider>
+    <a href="" routerLink="/SliderToggle">SliderToggle</a>
+    <mat-divider></mat-divider>
+  </mat-expansion-panel>
+</section>
+
+<section class="demo-expansion">
+  <mat-accordion>
+    <mat-expansion-panel #panel1>
+      <mat-expansion-panel-header>Navigation</mat-expansion-panel-header>
+       <a href="" routerLink="/Menu">Menu</a>
+       <mat-divider></mat-divider>
+       <a href="" routerLink="/Sidenav">Sidenav</a>
+       <mat-divider></mat-divider>
+       <a href="" routerLink="/ToolBar">ToolBar</a>
+       <mat-divider></mat-divider>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel2>
+      <mat-expansion-panel-header>Layout</mat-expansion-panel-header>
+       <!--  <a href="" routerLink="/Card">Card</a>
+       <mat-divider></mat-divider> -->
+        <a href="" routerLink="/Divider">Divider</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/ExpansionPanel">ExpansionPanel</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Grid">Grid</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/List">List</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Stepper">Stepper</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Tabs">Tabs</a>
+        <mat-divider></mat-divider>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel3>
+      <mat-expansion-panel-header>Buttons & Indicators</mat-expansion-panel-header>
+        <a href="" routerLink="/Button">Button</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Buttontoggle">Button toggle</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Badge">Badge</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Chips">Chips</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Icon">Icon</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Progress">Progress</a>
+        <mat-divider></mat-divider>
+      <mat-action-row>
+        <button mat-button (click)="panel3.expanded = false">Close</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel #panel4>
+      <mat-expansion-panel-header>Popups & Modals</mat-expansion-panel-header>
+       <!--  <a href="" routerLink="/BottomSheet">Bottom Sheet</a>
+       <mat-divider></mat-divider> -->
+        <a href="" routerLink="/Dialog">Dialog</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Snackbar">Snackbar</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/tool">ToolTip</a>
+        <mat-divider></mat-divider>
+      <mat-action-row>
+        <button mat-button (click)="panel4.expanded = false">Close</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+    <mat-expansion-panel #panel5>
+      <mat-expansion-panel-header> Data table</mat-expansion-panel-header>
+        <a href="" routerLink="/Paginator">Paginator</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Sortheader">Sort header</a>
+        <mat-divider></mat-divider>
+        <a href="" routerLink="/Table">Table</a>
+        <mat-divider></mat-divider>
+      <mat-action-row>
+        <button mat-button (click)="panel5.expanded = false">Close</button>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </mat-accordion>
+</section>

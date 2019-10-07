@@ -1,0 +1,79 @@
+<!-- <mat-drawer-container>
+  <mat-drawer mode="side" opened>
+    <div>Expansion Panel</div>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Input
+          </mat-panel-title>
+          <mat-panel-description>
+            Type your name and age
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <mat-form-field>
+          <input matInput placeholder="First name">
+        </mat-form-field>
+        
+        <mat-form-field>
+          <input matInput placeholder="Age">
+        </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel (opened)="panelOpenState = true"
+                           (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Self aware panel
+          </mat-panel-title>
+         <mat-panel-description>
+           Currently I am {{panelOpenState ? 'open' : 'closed'}}
+         </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-drawer>
+
+  <mat-drawer-content>Main content
+    <app-input></app-input>
+    <app-auto-complete></app-auto-complete>
+    <app-radio-button></app-radio-button>
+    <app-check-box></app-check-box>
+    <app-datepicker></app-datepicker>
+    <app-slider></app-slider>
+    <app-slider-toggle></app-slider-toggle>
+    <app-select></app-select>
+    <app-menu></app-menu>
+    <app-tool-bar></app-tool-bar>
+     <app-expansion-panel></app-expansion-panel>
+    <app-grid-list></app-grid-list>
+    <app-list></app-list>
+    <app-stepper></app-stepper>
+    <app-tabs></app-tabs>
+    <app-tree></app-tree>
+    <app-badge></app-badge>
+    <app-chips></app-chips>
+    <app-icon></app-icon>
+    <app-progress></app-progress>
+    <app-paginator></app-paginator>
+    <app-sort-header></app-sort-header>
+
+  </mat-drawer-content>
+</mat-drawer-container>
+
+ -->
+ <mat-sidenav-container>
+  <mat-sidenav #sidenav position="start" mode="side" opened="true">
+    <app-sidenavleft></app-sidenavleft>
+  </mat-sidenav> 
+  <mat-sidenav #sidenavRight position="end" mode="side" opened="false">
+    <app-sidenavright></app-sidenavright>
+  </mat-sidenav> 
+  <mat-sidenav-content id="content">
+    <app-header (toggleSidenav)="sidenav.toggle()"
+    (toggleSidenavRight)="sidenavRight.toggle()"></app-header>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+ </mat-sidenav-container>
